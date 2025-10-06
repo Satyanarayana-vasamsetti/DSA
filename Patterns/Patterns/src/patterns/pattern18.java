@@ -2,19 +2,18 @@ package patterns;
 
 import java.util.Scanner;
 
-public class pattern16 {
+public class pattern18 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter any number ");
+		System.out.println("Enter number ");
 		int n = sc.nextInt();
-		
-		for(char i=65;i<65+n;i++) {
-			for(int j=65;j<=i;j++) {
-				System.out.print(i);
+		for(int i=69;i>=n;i--) {
+			for(char j=69;j>=i;j--) {
+				System.out.print(j);
 			}
+			
 			System.out.println();
 		}
 		sc.close();
-		
 	}
 }
